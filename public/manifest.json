@@ -1,0 +1,20 @@
+{
+  "name": "my first extension",
+  "description": "this is my first tiny app",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
